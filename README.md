@@ -5,7 +5,7 @@ interested in exploring the exciting world of Multicloud and Artificial Intellig
 ```
 ## What We Do
 
-*   **Weekly Meetups:** Join us for our weekly online meetups where we discuss the latest advancements in Multicloud and AI. Each meetup features insightful presentations, engaging discussions, and opportunities to share knowledge and experiences.
+*   **Weekly Meetups:** weekly online meetups where we discuss the latest advancements in Multicloud and AI. Opportunities to share knowledge and experiences.
 *   **Knowledge Sharing:** This repository serves as a central hub for learning resources. You'll find articles, tutorials, code samples, and documentation related to Multicloud and AI.
 *   **Community Support:** We believe in the power of collaboration! Feel free to contribute your expertise, ask questions, and help others navigate the ever-evolving landscape of these technologies.
 
