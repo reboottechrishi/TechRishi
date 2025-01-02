@@ -1,4 +1,8 @@
 ## RebootTechRishi: A Community for Sharing and Learning Emerging Technologies
+<img width="391" alt="image" src="https://github.com/user-attachments/assets/b0249df8-c55e-4eb2-8809-506b7714a1f6" />
+
+
+
 ```
 Welcome to RebootTechRishi, a public GitHub page dedicated to fostering a collaborative learning environment for those
 interested in exploring the exciting world of Multicloud and Artificial Intelligence (AI)!
