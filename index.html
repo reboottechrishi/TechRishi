@@ -15,7 +15,7 @@
             color: #333;
         }
         header {
-            background: #1a73e8;
+            background: #ff8c00; /* Dark Orange */
             color: #fff;
             padding: 1rem 0;
             text-align: center;
@@ -59,22 +59,51 @@
             width: 100%;
             display: block;
         }
-        .container {
-            max-width: 900px;
+        .main-content {
+            display: flex;
+            max-width: 1200px;
             margin: 2rem auto;
             padding: 1.5rem;
             background: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        .content {
+            flex: 3;
+            margin-right: 1rem;
+        }
+        .sidebar {
+            flex: 1;
+            background: #ffe4c4; /* Light Orange (Bisque) */
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            color: #ff8c00; /* Dark Orange */
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            background: #ff8c00; /* Dark Orange */
+            color: #fff;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 4px;
+            text-align: center;
+        }
         h2 {
-            color: #1a73e8;
+            color: #ff8c00; /* Dark Orange */
         }
         footer {
             text-align: center;
             margin-top: 2rem;
             padding: 1rem 0;
-            background: #1a73e8;
+            background: #ff8c00; /* Dark Orange */
             color: #fff;
         }
         .cta {
@@ -83,7 +112,7 @@
         }
         .cta a {
             display: inline-block;
-            background: #1a73e8;
+            background: #ff8c00; /* Dark Orange */
             color: #fff;
             padding: 0.8rem 1.5rem;
             text-decoration: none;
@@ -91,7 +120,7 @@
             border-radius: 5px;
         }
         .cta a:hover {
-            background: #155cb0;
+            background: #e67e00; /* Slightly Darker Orange */
         }
     </style>
 </head>
@@ -108,36 +137,53 @@
     </nav>
     <div class="banner">
         <img src="https://via.placeholder.com/1200x400?text=Innovation+Meets+Technology" alt="Banner">
-       
     </div>
-    <div class="container">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to RebootTechRishi, your go-to platform for exploring cutting-edge technology solutions and staying ahead in the fast-evolving world of multi-cloud and DevOps. Join us as we share insights, best practices, and the latest trends shaping the future of technology.</p>
-        </section>
-        <section id="agenda">
-            <h2>Get Ready to Reboot! - Upcoming Events</h2>
+    <div class="main-content">
+        <!-- Main Content Section -->
+        <div class="content">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to RebootTechRishi, your go-to platform for exploring cutting-edge technology solutions and staying ahead in the fast-evolving world of multi-cloud and DevOps. Join us as we share insights, best practices, and the latest trends shaping the future of technology.</p>
+            </section>
+            <section id="agenda">
+                <h2>Get Ready to Reboot! - Upcoming Events</h2>
+                <ul>
+                    <li><strong>W1:</strong> Agile Project Management - Hands-on with Jira</li>
+                    <li><strong>W2:</strong> ReactJS Zero to Hero - Build Modern UIs from Scratch</li>
+                    <li><strong>W3:</strong> Data Science Deep Dive - Unlocking Insights from Data</li>
+                    <li><strong>W4:</strong> Demystifying Networks - From Cables to the Cloud</li>
+                    <li><strong>W5:</strong> IAM in Action - Protecting Resources and Identities</li>
+                    <li><strong>W6:</strong> Mastering Cloud Compute - Practical Skills for the Cloud</li>
+                    <li><strong>W7:</strong> Getting Hands-on with AI - Tools and Techniques</li>
+                </ul>
+            </section>
+            <section id="register">
+                <h2>Join Us</h2>
+                <p>Be a part of our journey to drive innovation and explore the future of technology. Contact RebootTechRishi Core Team!</p>
+                <div class="cta">
+                    <a href="https://example.com/register" target="_blank">Register Here</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <h2>Technologies We Cover</h2>
             <ul>
-                <li><strong>W1:</strong> Agile Project Management - Hands-on with Jira</li>
-                <li><strong>W2:</strong> ReactJS Zero to Hero - Build Modern UIs from Scratch</li>
-                <li><strong>W3:</strong> Data Science Deep Dive - Unlocking Insights from Data</li>
-                <li><strong>W4:</strong> Demystifying Networks - From Cables to the Cloud</li>
-                <li><strong>W5:</strong> IAM in Action - Protecting Resources and Identities</li>
-                <li><strong>W6:</strong> Mastering Cloud Compute - Practical Skills for the Cloud</li>
-                <li><strong>W7:</strong> Getting Hands-on with AI - Tools and Techniques</li>
-                
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>GCP Cloud</li>
+                <li>DevOps</li>
+                <li>React</li>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JSON</li>
             </ul>
-        </section>
-        <section id="register">
-            <h2>Join Us</h2>
-            <p>Be a part of our journey to drive innovation and explore the future of technology. Contact ReboottechRishi Core Team!</p>
-            <div class="cta">
-                <a href="https://example.com/register" target="_blank">Register Here</a>
-            </div>
-        </section>
+        </div>
     </div>
     <footer>
-        <p>&copy; 2025 reboottechrishi. All rights reserved.</p>
+        <p>&copy; 2025 RebootTechRishi. All rights reserved.</p>
     </footer>
 </body>
 </html>
