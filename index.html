@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the official site of Reboot Tech Rishi">
-    <title>Reboot Tech Rishi</title>
+    <meta name="description" content="Welcome to the official site of RebootTechRishi">
+    <title>RebootTechRishi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,6 +19,13 @@
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            height: 50px;
         }
         header h1 {
             margin: 0;
@@ -43,6 +50,15 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .banner {
+            width: 100%;
+            max-height: 400px;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            display: block;
+        }
         .container {
             max-width: 900px;
             margin: 2rem auto;
@@ -61,40 +77,66 @@
             background: #1a73e8;
             color: #fff;
         }
+        .cta {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        .cta a {
+            display: inline-block;
+            background: #1a73e8;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .cta a:hover {
+            background: #155cb0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Reboot Tech Rishi</h1>
-        <p>Innovating the Future, One Step at a Time</p>
+        <img src="https://via.placeholder.com/150?text=Logo" alt="Logo">
+        <h1>RebootTechRishi</h1>
+        <p>Empowering Innovation Through Technology</p>
     </header>
     <nav>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#register">Contact</a>
     </nav>
+    <div class="banner">
+        <img src="https://via.placeholder.com/1200x400?text=Innovation+Meets+Technology" alt="Banner">
+    </div>
     <div class="container">
         <section id="about">
-            <h2>About</h2>
-            <p>Welcome to Reboot Tech Rishi. We specialize in cutting-edge technology solutions and provide insights into the latest trends in the tech industry. Our mission is to empower individuals and businesses to achieve their goals through innovative solutions.</p>
+            <h2>About Us</h2>
+            <p>Welcome to reboottechrishi, your go-to platform for exploring cutting-edge technology solutions and staying ahead in the fast-evolving world of multi-cloud and DevOps. Join us as we share insights, best practices, and the latest trends shaping the future of technology.</p>
         </section>
-        <section id="services">
-            <h2>Our Services</h2>
+        <section id="agenda">
+            <h2>UpComing Events</h2>
             <ul>
-                <li>Customized Software Development</li>
-                <li>Technology Consulting</li>
-                <li>Workshops and Training</li>
-                <li>Open Source Contributions</li>
+                <li><strong>W1:</strong> Agile Project Management - Hands-on with Jira</li>
+                <li><strong>W2:</strong> ReactJS Zero to Hero - Build Modern UIs from Scratch</li>
+                <li><strong>W3:</strong> Data Science Deep Dive - Unlocking Insights from Data</li>
+                <li><strong>W4:</strong> Demystifying Networks - From Cables to the Cloud</li>
+                <li><strong>W5:</strong> IAM in Action - Protecting Resources and Identities</li>
+                <li><strong>W6:</strong> Mastering Cloud Compute - Practical Skills for the Cloud</li>
+                <li><strong>W7:</strong> Getting Hands-on with AI - Tools and Techniques</li>
+                
             </ul>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you'd like to work with us or have any questions, feel free to reach out!</p>
-            <p>Email: <a href="mailto:contact@reboottechrishi.com">contact@reboottechrishi.com</a></p>
+        <section id="register">
+            <h2>Join Us</h2>
+            <p>Be a part of our journey to drive innovation and explore the future of technology. Contact ReboottechRishi Core Team!</p>
+            <div class="cta">
+                <a href="https://example.com/register" target="_blank">Register Here</a>
+            </div>
         </section>
     </div>
     <footer>
-        <p>&copy; 2025 Reboot Tech Rishi. All rights reserved.</p>
+        <p>&copy; 2025 reboottechrishi. All rights reserved.</p>
     </footer>
 </body>
 </html>
