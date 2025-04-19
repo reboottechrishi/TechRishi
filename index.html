@@ -52,6 +52,7 @@
         }
         .main-content {
             display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
             max-width: 1200px;
             margin: 2rem auto;
             padding: 1.5rem;
@@ -61,7 +62,7 @@
         }
         .content {
             flex: 3;
-            margin-right: 1rem;
+            margin-right: 1.5rem;
         }
         .sidebar {
             flex: 1;
@@ -69,7 +70,9 @@
             padding: 1rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-left: 2rem; /* Move the sidebar further to the right */
+            margin-left: auto; /* Ensure proper alignment */
+            max-width: 300px; /* Restrict the width of the sidebar */
+            box-sizing: border-box; /* Ensures padding is included in width */
         }
         .sidebar h2 {
             color: #ff8c00; /* Dark Orange */
@@ -90,6 +93,26 @@
         }
         h2 {
             color: #ff8c00; /* Dark Orange */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        table th {
+            background-color: #ff8c00; /* Dark Orange */
+            color: white;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
         }
         footer {
             text-align: center;
@@ -120,6 +143,21 @@
         .cta a:hover {
             background: #e67e00; /* Slightly Darker Orange */
         }
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column; /* Stack content and sidebar */
+            }
+            .content {
+                margin-right: 0;
+            }
+            .sidebar {
+                margin-left: 0;
+                max-width: 100%; /* Sidebar takes full width on smaller screens */
+            }
+            table th, table td {
+                font-size: 0.9rem; /* Smaller font size for mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -142,15 +180,44 @@
             </section>
             <section id="agenda">
                 <h2>Get Ready to Reboot! - Upcoming Events</h2>
-                <ul>
-                    <li><strong>W1:</strong> Agile Project Management - Hands-on with Jira</li>
-                    <li><strong>W2:</strong> ReactJS Zero to Hero - Build Modern UIs from Scratch</li>
-                    <li><strong>W3:</strong> Data Science Deep Dive - Unlocking Insights from Data</li>
-                    <li><strong>W4:</strong> Demystifying Networks - From Cables to the Cloud</li>
-                    <li><strong>W5:</strong> IAM in Action - Protecting Resources and Identities</li>
-                    <li><strong>W6:</strong> Mastering Cloud Compute - Practical Skills for the Cloud</li>
-                    <li><strong>W7:</strong> Getting Hands-on with AI - Tools and Techniques</li>
-                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Topic</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>W1</td>
+                            <td>Agile Project Management - Hands-on with Jira</td>
+                        </tr>
+                        <tr>
+                            <td>W2</td>
+                            <td>ReactJS Zero to Hero - Build Modern UIs from Scratch</td>
+                        </tr>
+                        <tr>
+                            <td>W3</td>
+                            <td>Data Science Deep Dive - Unlocking Insights from Data</td>
+                        </tr>
+                        <tr>
+                            <td>W4</td>
+                            <td>Demystifying Networks - From Cables to the Cloud</td>
+                        </tr>
+                        <tr>
+                            <td>W5</td>
+                            <td>IAM in Action - Protecting Resources and Identities</td>
+                        </tr>
+                        <tr>
+                            <td>W6</td>
+                            <td>Mastering Cloud Compute - Practical Skills for the Cloud</td>
+                        </tr>
+                        <tr>
+                            <td>W7</td>
+                            <td>Getting Hands-on with AI - Tools and Techniques</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <section id="register">
                 <h2>Join Us</h2>
