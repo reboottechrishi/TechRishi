@@ -50,15 +50,6 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .banner {
-            width: 100%;
-            max-height: 400px;
-            overflow: hidden;
-        }
-        .banner img {
-            width: 100%;
-            display: block;
-        }
         .main-content {
             display: flex;
             max-width: 1200px;
@@ -78,6 +69,7 @@
             padding: 1rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-left: 2rem; /* Move the sidebar further to the right */
         }
         .sidebar h2 {
             color: #ff8c00; /* Dark Orange */
@@ -104,6 +96,12 @@
             margin-top: 2rem;
             padding: 1rem 0;
             background: #ff8c00; /* Dark Orange */
+            color: #fff;
+            position: relative;
+        }
+        .footer-time {
+            font-size: 0.8rem; /* Small font size */
+            margin-top: 0.5rem;
             color: #fff;
         }
         .cta {
@@ -135,9 +133,6 @@
         <a href="#agenda">Agenda</a>
         <a href="#register">Contact</a>
     </nav>
-    <div class="banner">
-        <img src="https://via.placeholder.com/1200x400?text=Innovation+Meets+Technology" alt="Banner">
-    </div>
     <div class="main-content">
         <!-- Main Content Section -->
         <div class="content">
@@ -184,6 +179,29 @@
     </div>
     <footer>
         <p>&copy; 2025 RebootTechRishi. All rights reserved.</p>
+        <div class="footer-time">
+            <p id="est-time">EST: Loading...</p>
+            <p id="ist-time">IST: Loading...</p>
+        </div>
     </footer>
+    <script>
+        function updateTime() {
+            const now = new Date();
+
+            // EST (Eastern Standard Time)
+            const estOptions = { timeZone: 'America/New_York', timeZoneName: 'short' };
+            const estTime = now.toLocaleString('en-US', estOptions);
+            document.getElementById('est-time').textContent = `EST: ${estTime}`;
+
+            // IST (Indian Standard Time)
+            const istOptions = { timeZone: 'Asia/Kolkata', timeZoneName: 'short' };
+            const istTime = now.toLocaleString('en-US', istOptions);
+            document.getElementById('ist-time').textContent = `IST: ${istTime}`;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+        updateTime(); // Initialize the time immediately
+    </script>
 </body>
 </html>
