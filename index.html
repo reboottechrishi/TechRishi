@@ -18,14 +18,18 @@
             background: #ff8c00; /* Dark Orange */
             color: #fff;
             padding: 1rem 0;
-            text-align: center;
+            text-align: left; /* Align header content to the left */
             position: relative;
         }
         header img {
             position: absolute;
             top: 10px;
-            left: 20px;
+            right: 20px; /* Move the logo to the right side */
             height: 50px;
+            background-color: #fff; /* Add a white background behind the logo */
+            padding: 5px; /* Add some spacing between the logo and the background */
+            border-radius: 8px; /* Round the corners of the background */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
         }
         header h1 {
             margin: 0;
@@ -122,26 +126,35 @@
             color: #fff;
             position: relative;
         }
-        .footer-time {
-            font-size: 0.8rem; /* Small font size */
-            margin-top: 0.5rem;
-            color: #fff;
-        }
-        .cta {
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-        .cta a {
+        footer .youtube-link {
+            margin-top: 1rem;
             display: inline-block;
-            background: #ff8c00; /* Dark Orange */
-            color: #fff;
+            background: #fff;
+            color: #ff8c00;
             padding: 0.8rem 1.5rem;
             text-decoration: none;
             font-size: 1rem;
             border-radius: 5px;
+            font-weight: bold;
         }
-        .cta a:hover {
-            background: #e67e00; /* Slightly Darker Orange */
+        footer .youtube-link:hover {
+            background: #e67e00;
+            color: #fff;
+        }
+        .blog-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .blog-section ul li {
+            margin: 0.5rem 0;
+        }
+        .blog-section ul li a {
+            color: #ff8c00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .blog-section ul li a:hover {
+            text-decoration: underline;
         }
         @media (max-width: 768px) {
             .main-content {
@@ -162,7 +175,7 @@
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/150?text=Logo" alt="Logo">
+        <img src="https://raw.githubusercontent.com/reboottechrishi/CloudMeet/main/AWS_Meetup_2023/logo/Logo.PNG" alt="Logo">
         <h1>RebootTechRishi</h1>
         <p>Empowering Innovation Through Technology</p>
     </header>
@@ -170,6 +183,8 @@
         <a href="#about">About</a>
         <a href="#agenda">Agenda</a>
         <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+        <a href="https://www.youtube.com/@AWSEventsChannel" target="_blank">YouTube</a>
     </nav>
     <div class="main-content">
         <!-- Main Content Section -->
@@ -226,6 +241,14 @@
                     <a href="https://github.com/reboottechrishi/CloudMeet" target="_blank">Contact</a>
                 </div>
             </section>
+            <section id="blog" class="blog-section">
+                <h2>Our Blog</h2>
+                <ul>
+                    <li><a href="https://github.com/reboottechrishi/CloudMeet/blob/main/blogs/2025-04-10-first-post.md" target="_blank">2025-04-10 First Post</a></li>
+                    <li><a href="https://github.com/reboottechrishi/CloudMeet/blob/main/blogs/2025-04-15-second-post.md" target="_blank">2025-04-15 Second Post</a></li>
+                    <li><a href="https://github.com/reboottechrishi/CloudMeet/blob/main/blogs/2025-04-20-third-post.md" target="_blank">2025-04-20 Third Post</a></li>
+                </ul>
+            </section>
         </div>
 
         <!-- Sidebar Section -->
@@ -250,6 +273,7 @@
             <p id="est-time">EST: Loading...</p>
             <p id="ist-time">IST: Loading...</p>
         </div>
+        <a class="youtube-link" href="https://www.youtube.com/@AWSEventsChannel" target="_blank">Visit our YouTube Channel</a>
     </footer>
     <script>
         function updateTime() {
