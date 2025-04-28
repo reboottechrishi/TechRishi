@@ -11,25 +11,30 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom, #f5f7fa, #e4ebf5); /* Light gradient background */
             color: #333;
         }
         header {
-            background: #ff8c00; /* Dark Orange */
+            background: #0073bb; /* Blue */
             color: #fff;
             padding: 1rem 0;
             text-align: left; /* Align header content to the left */
             position: relative;
+            display: flex; /* Use flexbox for horizontal alignment */
+            align-items: center; /* Vertically align items */
+            padding-left: 20px; /* Add some padding on the left */
         }
         header img {
-            position: absolute;
-            top: 10px;
-            right: 20px; /* Move the logo to the right side */
-            height: 50px;
+            height: 30px; /* Reduce logo size to fit in the same row */
+            margin-right: 10px; /* Add spacing between the logo and the text */
             background-color: #fff; /* Add a white background behind the logo */
-            padding: 5px; /* Add some spacing between the logo and the background */
+            padding: 3px; /* Add some spacing between the logo and the background */
             border-radius: 8px; /* Round the corners of the background */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow for emphasis */
+        }
+        header .text-container {
+            display: flex;
+            flex-direction: column; /* Stack the h1 and p vertically */
         }
         header h1 {
             margin: 0;
@@ -37,7 +42,7 @@
         }
         header p {
             font-size: 1.2rem;
-            margin-top: 0.5rem;
+            margin: 0; /* Remove extra margin to keep it aligned */
         }
         nav {
             background: #333;
@@ -60,7 +65,7 @@
             max-width: 1200px;
             margin: 2rem auto;
             padding: 1.5rem;
-            background: #fff;
+            background: transparent; /* Make the background transparent to show the body background */
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -70,16 +75,16 @@
         }
         .sidebar {
             flex: 1;
-            background: #ffe4c4; /* Light Orange (Bisque) */
+            background: transparent; /* Make the sidebar background transparent */
             padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: none; /* Remove the shadow to match the new design */
             margin-left: auto; /* Ensure proper alignment */
             max-width: 300px; /* Restrict the width of the sidebar */
             box-sizing: border-box; /* Ensures padding is included in width */
         }
         .sidebar h2 {
-            color: #ff8c00; /* Dark Orange */
+            color: #0073bb; /* AWS-like Blue */
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -88,7 +93,7 @@
             padding: 0;
         }
         .sidebar ul li {
-            background: #ff8c00; /* Dark Orange */
+            background: #0073bb; /* AWS-like Blue */
             color: #fff;
             margin: 0.5rem 0;
             padding: 0.5rem;
@@ -96,7 +101,7 @@
             text-align: center;
         }
         h2 {
-            color: #ff8c00; /* Dark Orange */
+            color: #0073bb; /* AWS-like Blue */
         }
         table {
             width: 100%;
@@ -109,7 +114,7 @@
             text-align: left;
         }
         table th {
-            background-color: #ff8c00; /* Dark Orange */
+            background-color: #0073bb; /* AWS-like Blue */
             color: white;
         }
         table tr:nth-child(even) {
@@ -119,18 +124,15 @@
             background-color: #f1f1f1;
         }
         footer {
+            background: #0073bb; /* AWS-like Blue */
+            color: #fff;
             text-align: center;
             margin-top: 2rem;
             padding: 1rem 0;
-            background: #ff8c00; /* Dark Orange */
-            color: #fff;
-            position: relative;
         }
         footer .youtube-link {
-            margin-top: 1rem;
-            display: inline-block;
             background: #fff;
-            color: #ff8c00;
+            color: #0073bb; /* AWS-like Blue */
             padding: 0.8rem 1.5rem;
             text-decoration: none;
             font-size: 1rem;
@@ -138,7 +140,7 @@
             font-weight: bold;
         }
         footer .youtube-link:hover {
-            background: #e67e00;
+            background: #005a9c; /* Slightly darker blue for hover */
             color: #fff;
         }
         .blog-section ul {
@@ -149,7 +151,7 @@
             margin: 0.5rem 0;
         }
         .blog-section ul li a {
-            color: #ff8c00;
+            color: #005a9c;
             text-decoration: none;
             font-weight: bold;
         }
@@ -176,8 +178,10 @@
 <body>
     <header>
         <img src="https://raw.githubusercontent.com/reboottechrishi/CloudMeet/main/AWS_Meetup_2023/logo/Logo.PNG" alt="Logo">
-        <h1>RebootTechRishi</h1>
-        <p>Empowering Innovation Through Technology</p>
+        <div class="text-container">
+            <h1>RebootTechRishi</h1>
+            <p>Empowering Innovation Through Technology</p>
+        </div>
     </header>
     <nav>
         <a href="#about">About</a>
