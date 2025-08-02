@@ -15,16 +15,16 @@ const Navbar = () => {
       <div className='space-x-8'>
                 <motion.a whileHover={{ scale: 1.1, y: -6 }} whileTap={{ scale: 0.9 }} href="#about" className='hover:text-blue-800'>About</motion.a>
                 <motion.a whileHover={{ scale: 1.1, y: -6 }} whileTap={{ scale: 0.9 }} href="#technology" className='hover:text-blue-800'>Technology</motion.a>
-                <motion.a whileHover={{ scale: 1.1, y: -6 }} whileTap={{ scale: 0.9 }} href="#events" className='hover:text-blue-800'>Events</motion.a>
+                <motion.a whileHover={{ scale: 1.1, y: -6 }} whileTap={{ scale: 0.9 }} href="#events" className='hover:text-blue-800'>Blogs</motion.a>
                 <motion.a whileHover={{ scale: 1.1, y: -6 }} whileTap={{ scale: 0.9 }} href="#contact" className='hover:text-blue-800'>Contact</motion.a>
                 <motion.a whileHover={{ scale: 1.1, y: -6 }} whileTap={{ scale: 0.9 }} href="https://www.youtube.com/@TechRishi-l4s" target="_blank" className='hover:text-blue-800'>YouTube</motion.a>
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   className='bg-gradient-to-r from-indigo-600 to-blue-500 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:from-indigo-700 hover:to-blue-600 transition-all duration-200 border-2 border-white drop-shadow-md'
                 >
                   Blog
-                </motion.button>
+                </motion.button> */}
       </div>
     </div>
   )
